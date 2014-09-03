@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        String path = DefaultProperties.get("fxml_path");
+        String path = DefaultProperties.get("fxml.path");
         Parent root = FXMLLoader.load(getClass().getResource(String.format("%s/main.fxml",path)));
         primaryStage.setTitle("MyXML");
         primaryStage.setScene(new Scene(root));
